@@ -8,6 +8,16 @@ Massive Open Online Courses (MOOCs) play an ever more central role in open educa
 
 In this setting, the course material or tests provided after "passing" do not contribute to earning the certificate, thus potentially affecting learner's behavior. Therefore, we explore how "passing" impacts MOOC learners: **do learners alter their behaviour after this point?** And if so how? While in traditional classroom-based learning the role of assessment and its influence on learning behaviour has been well-established, we are the first to provide answers to these questions in the context of MOOCs, providing valuable insights which can be used to design better courses in the future. As a result, we present a set of core behaviour patterns based on our extensive exploratory analysis of the log traces of more than 4,000 certificate-earning learners across four edX MOOCs.
 
+## MOOC Dataset
+We analyze the log traces of 4,000 learners who successfully completed one of four MOOCs offered on the edX platform -- they are summarized as following:
+
+| ID  | Name                                   | Start Time  |
+| --- | -------------------------------------- |:-----------:|
+| FP  | Introduction to Functional Programming | 10/2015     |
+| DA  | Data Analysis: Take It to the MAX()    | 09/2015     |
+| SEW | Treatment of Urban Sewage              | 04/2016     |
+| SE  | Solar Energy                           | 09/2015     |
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Yue-ZHAO/umap2017/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
