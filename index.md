@@ -11,12 +11,22 @@ In this setting, the course material or tests provided after "passing" do not co
 ## MOOC Dataset
 We analyze the log traces of 4,000 learners who successfully completed one of four MOOCs offered on the edX platform -- they are summarized as following:
 
-| ID  | Name                                   | Start Time  |
-| --- | -------------------------------------- |:-----------:|
-| FP  | Introduction to Functional Programming | 10/2015     |
-| DA  | Data Analysis: Take It to the MAX()    | 09/2015     |
-| SEW | Treatment of Urban Sewage              | 04/2016     |
-| SE  | Solar Energy                           | 09/2015     |
+| ID  | Name                                   | Start   | End     | Units | Videos | Questions | Attempts | Registered | Engaged | Passed | Compl Rate |
+| --- | -------------------------------------- |:-------:|:-------:| -----:| ------:| ---------:| --------:| ----------:| -------:| ------:| ----------:|
+| FP  | Introduction to Functional Programming | 10/2015 | 01/2016 |   8   |   39   |   285     |    1     |     25,188 | 9,900 | 1,143| 4.54%      |
+| DA  | Data Analysis: Take It to the MAX()    | 09/2015 | 11/2015 |   8   |   60   |   137     |    2     |     23,813 | 9,780 | 1,156| 4.85%      |
+| SEW | Treatment of Urban Sewage              | 04/2016 | 06/2016 |   7   |   79   |    36     |    1     |     11,006 | 2,589 |   361| 3.28%      |
+| SE  | Solar Energy                           | 09/2015 | 12/2015 |   8   |   61   |   128     |   1 - 3  |     26,718 | 12,723| 1,346| 5.04%      |
+
+As the distribution of possible scores shows in Fig.1 (and with $\tau_{pass}=58%$ and $\tau_{pass}=60%$ in mind), all four MOOCs can be passed well before the final unit.
+
+![Figure1](images/fraction_scores_by_unit_in_4_courses_color.png)
+
+In Fig.2 we plot the _total_ number of learners who earned a certificate by the end of each (weekly) unit  --- starting at the first possible certificate-earning unit.
+
+![Figure2](images/passer_count_stacked_color.png)
+
+## 
 
 ## Welcome to GitHub Pages
 
