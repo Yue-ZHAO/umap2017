@@ -8,6 +8,13 @@ Massive Open Online Courses (MOOCs) play an ever more central role in open educa
 
 In this setting, the course material or tests provided after "passing" do not contribute to earning the certificate, thus potentially affecting learner's behavior. Therefore, we explore how "passing" impacts MOOC learners: **do learners alter their behaviour after this point?** And if so how? While in traditional classroom-based learning the role of assessment and its influence on learning behaviour has been well-established, we are the first to provide answers to these questions in the context of MOOCs, providing valuable insights which can be used to design better courses in the future. As a result, we present a set of core behaviour patterns based on our extensive exploratory analysis of the log traces of more than 4,000 certificate-earning learners across four edX MOOCs.
 
+## Research Questions
+We address two **R**esearch **Q**uestions in this work:
+
+**RQ 1:** Do MOOC learners behave differently after clinching a passing grade?
+
+**RQ 2:** What are the core behaviour patterns of MOOC learners before and after passing, and how can learners be classified?
+
 ## MOOC Dataset
 We analyze the log traces of 4,000 learners who successfully completed one of four MOOCs offered on the edX platform -- they are summarized as following:
 
@@ -20,15 +27,33 @@ We analyze the log traces of 4,000 learners who successfully completed one of fo
 
 As the distribution of possible scores shows in Fig.1 (and with $\tau_{pass}=58%$ and $\tau_{pass}=60%$ in mind), all four MOOCs can be passed well before the final unit.
 
-![Figure1](images/fraction_scores_by_unit_in_4_courses_color.png)
+<table class="image">
+<caption align="bottom">Figure 1: Overview of the fraction of scores that learners can earn in each unit. The passing threshold for SE is $\tau_{pass}=58%$, while it is $\tau_{pass}=60%$ for the other three MOOCs. Best viewed in color.</caption>
+<tr><td><img src="images/fraction_scores_by_unit_in_4_courses_color.png" alt="Figure 1"/></td></tr>
+</table>
 
 In Fig.2 we plot the _total_ number of learners who earned a certificate by the end of each (weekly) unit  --- starting at the first possible certificate-earning unit.
 
-![Figure2](images/passer_count_stacked_color.png)
+<table class="image">
+<caption align="bottom">Figure 2: Total number of certificate earners (i.e. "passers") at the end of each unit.</caption>
+<tr><td><img src="images/passer_count_stacked_color.png" alt="Figure 2"/></td></tr>
+</table>
 
-## 
+## Pre-/post-passing Behaviour
 
-## Welcome to GitHub Pages
+### Observation Analysis
+
+### Clustering Analysis
+
+## Learners' Behaviour Pattern
+In addressing **RQ2** we now conceptually define a number of behaviour patterns (shown in Fig 5, based on the literature and our own findings) and then classify our passers into their closest matching pattern. 
+
+<table class="image">
+<caption align="bottom">Figure 5: Examples of behaviours falling into each of our five pre-passing (left figure) and six post-passing (right figure) behaviour patterns for a prototypical learner passing in Unit 5. Best viewed in color.</caption>
+<tr><td><img src="images/prototype_prepost_quiz.png" alt="Figure 5" style="width: 800px;"/></td></tr>
+</table>
+
+<!--## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Yue-ZHAO/umap2017/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -65,3 +90,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+-->
