@@ -43,14 +43,109 @@ In Fig.2 we plot the _total_ number of learners who earned a certificate by the 
 
 ### Observation Analysis
 
-### Clustering Analysis
-
-## Learners' Behaviour Pattern
-In addressing **RQ2** we now conceptually define a number of behaviour patterns (shown in Fig 5, based on the literature and our own findings) and then classify our passers into their closest matching pattern. 
+The distribution of quiz scores and video consumption for our learners grouped by passing unit are shown in Fig.3 and Fig.4
+<table class="image">
+<caption align="bottom">Figure 3: Quiz score distribution: passers are binned according to their passing unit. Rows represent groups of passers, columns represent one particular unit. Red plots show groups of passers that reached the passing threshold in a previous unit.</caption>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> FP </p>
+    <img src="images/FP101x_3T2015_score_distribution_RPlot.png" alt="Figure 3 FP" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> DA </p>
+    <img src="images/EX101x_3T2015_score_distribution_RPlot.png" alt="Figure 3 DA" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SEW </p>
+    <img src="images/CTB3365STx_1T2016_score_distribution_RPlot.png" alt="Figure 3 SEW" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SE </p>
+    <img src="images/ET3034x_3T2015_score_distribution_RPlot.png" alt="Figure 3 SE" style="width: 800px;"/>
+  </td>  
+</tr>
+</table>
 
 <table class="image">
-<caption align="bottom">Figure 5: Examples of behaviours falling into each of our five pre-passing (left figure) and six post-passing (right figure) behaviour patterns for a prototypical learner passing in Unit 5. Best viewed in color.</caption>
-<tr><td><img src="images/prototype_prepost_quiz.png" alt="Figure 5" style="width: 800px;"/></td></tr>
+<caption align="bottom">Figure 4: Video consumption distribution: passers are binned according to their passing unit. Rows represent groups of passers, columns represent a particular unit. Red plots show groups of passers that reached the passing threshold in a previous unit.</caption>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> FP </p>
+    <img src="images/FP101x_3T2015_video_distribution_RPlot.png" alt="Figure 4 FP" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> DA </p>
+    <img src="images/EX101x_3T2015_video_distribution_RPlot.png" alt="Figure 4 DA" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SEW </p>
+    <img src="images/CTB3365STx_1T2016_video_distribution_RPlot.png" alt="Figure 4 SEW" style="width: 800px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SE </p>
+    <img src="images/ET3034x_3T2015_video_distribution_RPlot.png" alt="Figure 4 SE" style="width: 800px;"/>
+  </td>  
+</tr>
+</table>
+
+### Clustering Analysis
+
+We visualize the resulting normalized quiz score clusters in Fig.5 for the four courses: each unit in each cluster is represented by the average score learners in that cluster achieve in that unit with their respective confidence bands.
+
+<table class="image">
+<caption align="bottom">Figure 5: K-means clustering of learners normalized quiz score feature vectors for the first three unit-n passers groups (i.e. the early passers). The cluster label in each graph shows the number of passers in each cluster. The vertical red line indicates the unit in which passers reached the passing threshold. The shaded areas around the lines show the upper (99%) and lower (70%) confidence bounds. Best viewed in color.</caption>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> FP (Unit 5, 6, and 7)</p>
+    <img src="images/grade_cluster/FP101x_3T2015_grade_clust_Week_5.png" alt="Figure 5 FP" style="width: 250px;"/>
+    <img src="images/grade_cluster/FP101x_3T2015_grade_clust_Week_6.png" alt="Figure 5 FP" style="width: 250px;"/>
+    <img src="images/grade_cluster/FP101x_3T2015_grade_clust_Week_7.png" alt="Figure 5 FP" style="width: 250px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> DA (Unit 5, 6, and 7)</p>
+    <img src="images/grade_cluster/EX101x_3T2015_grade_clust_Week_5.png" alt="Figure 5 DA" style="width: 250px;"/>
+    <img src="images/grade_cluster/EX101x_3T2015_grade_clust_Week_6.png" alt="Figure 5 DA" style="width: 250px;"/>
+    <img src="images/grade_cluster/EX101x_3T2015_grade_clust_Week_7.png" alt="Figure 5 DA" style="width: 250px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SEW (Unit 4, 5, and 6)</p>
+    <img src="images/grade_cluster/CTB3365STx_1T2016_grade_clust_Week_4.png" alt="Figure 5 SEW" style="width: 250px;"/>
+    <img src="images/grade_cluster/CTB3365STx_1T2016_grade_clust_Week_5.png" alt="Figure 5 SEW" style="width: 250px;"/>
+    <img src="images/grade_cluster/CTB3365STx_1T2016_grade_clust_Week_6.png" alt="Figure 5 SEW" style="width: 250px;"/>
+  </td>  
+</tr>
+<tr>
+  <td>
+    <p align="center" style="font-size:160%;"> SE (Unit 5, 6, and 7) </p>
+    <img src="images/grade_cluster/ET3034x_3T2015_grade_clust_Week_5.png" alt="Figure 5 SE" style="width: 250px;"/>
+    <img src="images/grade_cluster/ET3034x_3T2015_grade_clust_Week_6.png" alt="Figure 5 SE" style="width: 250px;"/>
+    <img src="images/grade_cluster/ET3034x_3T2015_grade_clust_Week_7.png" alt="Figure 5 SE" style="width: 250px;"/>
+  </td>  
+</tr>
+</table>
+
+## Learners' Behaviour Pattern
+In addressing **RQ2** we now conceptually define a number of behaviour patterns (shown in Fig 6, based on the literature and our own findings) and then classify our passers into their closest matching pattern. 
+
+<table class="image">
+<caption align="bottom">Figure 6: Examples of behaviours falling into each of our five pre-passing (left figure) and six post-passing (right figure) behaviour patterns for a prototypical learner passing in Unit 5. Best viewed in color.</caption>
+<tr><td><img src="images/prototype_prepost_quiz.png" alt="Figure 6" style="width: 800px;"/></td></tr>
 </table>
 
 <!--## Welcome to GitHub Pages
